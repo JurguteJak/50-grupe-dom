@@ -1,3 +1,7 @@
+import { header } from "../js/header";
+
+header();
+
 //<button type="button">Click me</button>
 
 const formDOM = document.getElementsByTagName('form')[0];

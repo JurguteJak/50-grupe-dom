@@ -1,7 +1,15 @@
+// 1 - imporas
 import { header } from "../js/header.js"
 
-// const pokeUrl = 'https://en.wikipedia.org/wiki/Pikachu#/media/File:Pok%C3%A9mon_Pikachu_art.png';
-// const mainDOM = document.querySelector('main');
-// mainDOM.innerHTML = `<img src="${pokeUrl}" alt="Poke poke">`;
+// 2 - turinio generavimas
+const pokeUrl = 'https://upload.wikimedia.org/wikipedia/en/a/a6/Pok%C3%A9mon_Pikachu_art.png';
+const mainDOM = document.querySelector('main');
+mainDOM.innerHTML = `<img src="${pokeUrl}" alt="Poke poke">`;
 
-header();
+// 3 - jau esamo turinio radimas ir event'o registravimas
+const buttonDOM = document.querySelector('button');
+buttonDOM.addEventListener('click', () => {
+    console.log('Valio!!');
+})
+// 4 - BOOM!
+header(true);
